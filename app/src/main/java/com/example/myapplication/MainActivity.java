@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import java.util.Random;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -14,14 +16,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    private void Losowanie(){
-
+    private int Losowanie(){
+        Random r = new Random();
+        int Liczba = r.nextInt(52+1);
+        return Liczba;
     }
     private void Krupier(){
 
     }
 
     public void Start(View view) {
+
     }
 
     public void Losuj(View view) {
